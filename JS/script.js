@@ -18,7 +18,7 @@ let h = []
 buttons[0].addEventListener('click', () => {
 	tab_pl = studies_pl
 	tab_eng = studies_eng
-	console.log(tab_eng)
+	console.log('fixed')
 })
 
 buttons[1].addEventListener('click', () => {
