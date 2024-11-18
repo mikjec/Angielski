@@ -8,7 +8,7 @@ export const studies_pl = [
 	'rektor',
 	'wykłady',
 	'dziekan',
-	'aula/sala wykładowa',
+	'aula/ sala wykładowa',
 	'laboratoria',
 	'wydział',
 	'wydział budownictwa',
@@ -263,7 +263,7 @@ export const otis_el_eng = [
 	'significantly',
 	'wear and tear',
 	'emphasise',
-	'totally/entirely/completely',
+	'totally/ entirely/ completely',
 	'considerably',
 	'highly',
 ]
