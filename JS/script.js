@@ -8,6 +8,8 @@ const question_q = document.querySelector('.questions__question')
 const question_an = document.querySelector('.questions__answer')
 const button_next = document.querySelector('.buttons__next')
 const button_prev = document.querySelector('.buttons__prev')
+const button_home = document.querySelector('.home')
+
 let tab_pl = []
 let tab_eng = []
 let i = 0
@@ -58,10 +60,31 @@ function dissapear(element) {
 		element.style.top = '-100%'
 		appear(questions)
 	}, 200)
+}
 
+function appear2(element) {
 	setTimeout(() => {
-		element.style.display = 'none'
-	}, 500)
+		element.style.top = '0'
+		dissapear2(questions)
+	}, 100)
+	i = 0
+	counter = 0
+	h=[]
+	tab_eng=[]
+	tab_pl=[]
+	// while (h.length > 0) {
+	// 	h.pop()
+	// }
+	// while (tab_eng.length > 0) {
+	// 	tab_eng.pop()
+	// 	tab_pl.pop()
+	// }
+}
+
+function dissapear2(element) {
+	setTimeout(() => {
+		element.style.top = '200%'
+	}, 100)
 }
 
 buttons.forEach(button => {
@@ -101,3 +124,6 @@ function prevQ() {
 
 button_next.addEventListener('click', () => nextQ())
 button_prev.addEventListener('click', () => prevQ())
+button_home.addEventListener('click', () => {
+	appear2(menu)
+})
