@@ -96,9 +96,6 @@ function prevQ() {
 		question_an.textContent = `${tab_pl[h[h.length - 1]]}`
 		question_an.style.color = '#9e9d9d'
 		counter = 0
-	} else {
-		location.reload()
-		location.reload(true)
 	}
 }
 
