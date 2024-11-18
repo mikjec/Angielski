@@ -43,12 +43,11 @@ body {
   height: 10px;
   background-color: #039dff;
   border-radius: 10px;
-  margin: 5px 0 10px;
+  margin: 2px 0 5px;
 }
 
 .menu__button {
   position: relative;
-  margin: 20px;
   padding: 30px 50px;
   background-color: #039dff;
   border: 2px solid black;
@@ -100,7 +99,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 80px 20px;
-  top: 150%;
+  top: 200%;
   left: 50%;
   color: black;
   transform: translate(-50%, -50%);
@@ -120,8 +119,19 @@ body {
 .buttons .buttons__prev {
   color: white;
   background-color: #3a3939;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 100px;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #3a3939;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */

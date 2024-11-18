@@ -7,6 +7,8 @@ const questions = document.querySelector('.questions')
 const question_q = document.querySelector('.questions__question')
 const question_an = document.querySelector('.questions__answer')
 const button_next = document.querySelector('.buttons__next')
+const button_prev = document.querySelector('.buttons__prev')
+const button_home = document.querySelector('.home')
 let tab_pl = []
 let tab_eng = []
 let i = 0
@@ -70,8 +72,7 @@ buttons.forEach(button => {
 function nextQ() {
 	counter += 1
 	question_an.style.color = 'black'
-	if (i < tab_eng.length - 1 && counter == 2) {
-		i += 1
+	if (h.length < tab_eng.length && counter == 2) {
 		let rnd = Math.floor(Math.random() * (tab_eng.length - 1 - 0 + 1)) + 0
 		while (h.includes(rnd)) rnd = Math.floor(Math.random() * (tab_eng.length - 1 - 0 + 1)) + 0
 		if (!h.includes(rnd)) {
@@ -89,4 +90,18 @@ function nextQ() {
 	}
 }
 
+function prevQ() {
+	if (h.length > 1) {
+		h.pop()
+		question_q.textContent = `${tab_eng[h[h.length - 1]]}`
+		question_an.textContent = `${tab_pl[h[h.length - 1]]}`
+		question_an.style.color = '#9e9d9d'
+		counter = 0
+	} else {
+		location.reload()
+	}
+}
+
 button_next.addEventListener('click', () => nextQ())
+button_prev.addEventListener('click', () => prevQ())
+button_home.addEventListener('click', () => location.reload())
