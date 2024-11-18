@@ -263,7 +263,7 @@ export const sp_el_eng = [
 ]
 
 export const otis_el_pl = [
-	'ulepszyć',
+	'ulepszyć',//22
 	'wyeliminować, zredukować coś do zera',
 	'coś lepsze od czegoś',
 	'zredukować',

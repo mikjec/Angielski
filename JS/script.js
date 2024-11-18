@@ -69,16 +69,9 @@ function appear2(element) {
 	}, 100)
 	i = 0
 	counter = 0
-	h=[]
-	tab_eng=[]
-	tab_pl=[]
-	// while (h.length > 0) {
-	// 	h.pop()
-	// }
-	// while (tab_eng.length > 0) {
-	// 	tab_eng.pop()
-	// 	tab_pl.pop()
-	// }
+	h = []
+	tab_eng = []
+	tab_pl = []
 }
 
 function dissapear2(element) {
@@ -119,6 +112,7 @@ function prevQ() {
 		question_an.textContent = `${tab_pl[h[h.length - 1]]}`
 		question_an.style.color = '#9e9d9d'
 		counter = 0
+		i -= 1
 	}
 }
 
