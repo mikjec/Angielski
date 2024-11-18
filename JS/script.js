@@ -7,6 +7,7 @@ const questions = document.querySelector('.questions')
 const question_q = document.querySelector('.questions__question')
 const question_an = document.querySelector('.questions__answer')
 const button_next = document.querySelector('.buttons__next')
+const button_prev = document.querySelector('.buttons__prev')
 let tab_pl = []
 let tab_eng = []
 let i = 0
@@ -88,5 +89,18 @@ function nextQ() {
 		}
 	}
 }
+function prevQ() {
+	if (h.length > 1) {
+		h.pop()
+		question_q.textContent = `${tab_eng[h[h.length - 1]]}`
+		question_an.textContent = `${tab_pl[h[h.length - 1]]}`
+		question_an.style.color = '#9e9d9d'
+		counter = 0
+	} else {
+		location.reload()
+		location.reload(true)
+	}
+}
 
 button_next.addEventListener('click', () => nextQ())
+button_prev.addEventListener('click', () => prevQ())
