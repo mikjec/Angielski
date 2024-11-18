@@ -110,23 +110,20 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  top: 20%;
+  top: 10%;
   margin: auto;
 }
 .buttons .buttons__next,
 .buttons .buttons__prev {
   color: white;
   background-color: #3a3939;
-  width: 150px;
-  height: 100px;
+  width: 120px;
+  height: 80px;
   border-radius: 20px;
   font-size: 30px;
 }
 
 .home {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   background-color: #3a3939;
   color: white;
   width: 50px;
