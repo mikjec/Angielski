@@ -98,10 +98,10 @@ function prevQ() {
 		question_an.style.color = '#9e9d9d'
 		counter = 0
 	} else {
-		location.reload()
+		location.reload(true)
 	}
 }
 
 button_next.addEventListener('click', () => nextQ())
 button_prev.addEventListener('click', () => prevQ())
-button_home.addEventListener('click', () => location.reload())
+button_home.addEventListener('click', () => location.reload(true))
