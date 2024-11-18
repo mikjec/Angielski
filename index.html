@@ -4,22 +4,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8cecda4e3d.js" crossorigin="anonymous"></script>
         <title>Document</title>
-        <style>
-            body {
-                background-color: #333;
-            }
-        </style>
     </head>
 
     <body>
 
-        <div class="category_buttons">
-            <button class="category_buttons__Studies">Studies</button>
-            <button class="category_buttons__GPS">GPS</button>
-            <button class="category_buttons__otis">Otis Elevators</button>
-            <button class="category_buttons__spel">Space elevators</button>
-            <button class="category_buttons__all"></button>
+        <div class="menu">
+            <h1 class="menu__title">category</h1>
+            <div class="underline"></div>
+            <button class="menu__button menu__button-studies">Studies</button>
+            <button class="menu__button menu__button-gps">GPS</button>
+            <button class="menu__button menu__button-otis">Otis Elevators</button>
+            <button class="menu__button menu__button-spel">Space elevators</button>
+            <button class="menu__button menu__button-all">All</button>
+        </div>
+
+
+        <div class="questions">
+            <div class="questions__question"></div>
+            <div class="questions__answer"></div>
+            <div class="buttons">
+                <button class="buttons__prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="buttons__next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
         </div>
 
         <script type="module" src="JS/script.js"></script>

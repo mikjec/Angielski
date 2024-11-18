@@ -1,5 +1,3 @@
-
-
 export const studies_pl = [
 	'akademiki',
 	'stołówka',
@@ -76,7 +74,7 @@ export const studies_eng = [
 	'lectures',
 	'dean',
 	'lecture hall',
-	'laboratotries',
+	'laboratories',
 	'faculty',
 	'Civil engineering',
 	'Enviromental engineering',

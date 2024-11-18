@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	font-family: 'Montserrat', 'sans-serif';
+	background-color: rgb(247, 249, 251);
+	overflow: hidden;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	margin: 20px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(247, 249, 251);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	overflow: hidden;
+	transition: top 0.5s ease;
+}
+
+.menu__title {
+	text-transform: uppercase;
+	color: #414040;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.underline {
+	width: 60px;
+	height: 10px;
+	background-color: #039dff;
+	border-radius: 10px;
+	margin: 5px 0 10px;
+}
+
+.menu__button {
+	position: relative;
+	margin: 20px;
+	padding: 30px 50px;
+	background-color: #039dff;
+	border: 2px solid black;
+	border-radius: 8px;
+	color: #000000;
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	border: 2px solid black;
+	border-radius: 30px;
+}
+
+.dissapear {
+	top: -100%;
+}
+
+.questions__question,
+.questions__answer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #9e9d9d;
+	height: 25%;
+	padding: 10%;
+	margin: 30px;
+	border-radius: 30px;
+	font-size: 25px;
+	border: 2px solid white;
+}
+
+.questions__answer {
+	color: #9e9d9d;
+}
+
+.questions {
+	background-color: #414040;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 80px 20px;
+	top: 150%;
+	left: 50%;
+	color: black;
+	transform: translate(-50%, -50%);
+	transition: 0.5s;
+}
+
+.buttons {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	top: 20%;
+	margin: auto;
+	.buttons__next,
+	.buttons__prev {
+		color: white;
+		background-color: #3a3939;
+		width: 100px;
+		height: 50px;
+
+		border-radius: 20px;
+		font-size: 20px;
+	}
+}
